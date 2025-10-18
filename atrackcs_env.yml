@@ -1,0 +1,30 @@
+name: atrackcs2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - xarray
+  - netcdf4
+  - scipy
+  - matplotlib
+  - cartopy
+  - geopandas
+  - shapely
+  - rioxarray
+  - rasterio
+  - fiona
+  - pyproj
+  - metpy
+  - jupyterlab
+  - geopy
+  - ipykernel
+  - tqdm
+  - requests
+  - pooch
+  - dask
+  - pip:
+      - cdsapi
+      - cads-api-client
