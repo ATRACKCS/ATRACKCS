@@ -22,7 +22,7 @@ ATRACKCS relies on geospatial libraries like `geopandas` and `rioxarray`, which 
 Open your terminal and clone the ATRACKCS source code from GitHub:
 
 ```bash
-git clone [https://github.com/ATRACKCS/ATRACKCS.git](https://github.com/ATRACKCS/ATRACKCS.git)
+git clone https://github.com/ATRACKCS/ATRACKCS.git
 cd ATRACKCS
 ```
 
@@ -224,36 +224,24 @@ Cloud top Tb obtained from the Merge IR V1 dataset from 08:00-16:00 UTC-5 8th ju
 * `test`: Data and results of the examples in `notebooks`.
 
 -----
+
 ## Use in research
 
-*  **Robledo, V., Henao, J. J., Mejía, J. F., Ramírez‐Cardona, Á., Hernández, K. S., Gómez‐Ríos, S., & Rendón, Á. M. (2024).**  
-   *Climatological tracking and lifecycle characteristics of mesoscale convective systems in Northwestern South America.*  
-   Journal of Geophysical Research: Atmospheres, 129, e2024JD041159. [DOI](https://doi.org/10.1029/2024JD041159).
+1. **Robledo, V., Henao, J. J., Mejía, J. F., Ramírez‐Cardona, Á., Hernández, K. S., Gómez‐Ríos, S., & Rendón, Á. M. (2024).** *Climatological tracking and lifecycle characteristics of mesoscale convective systems in Northwestern South America.* Journal of Geophysical Research: Atmospheres, 129, e2024JD041159. [DOI](https://doi.org/10.1029/2024JD041159).
 
-<<<<<<< Updated upstream
-*  **Vergara, H. J., Robledo, V., Anagnostopoulos, G., Aravamudan, A., Zhang, X., Nikolopoulos, E. I., ... & Forero, G. (2023).**  
-=======
 2. **Zhe Feng, Andreas F Prein, Julia Kukulies, Thomas Fiolleau, William K Jones, Ben Maybee, Zachary L Moon, Kelly M Núñez Ocasio, Wenhao Dong, Maria J Molina, Mary Grace Albright, Manikandan Rajagopal, Vanessa Robledo, Jinyan Song, Fengfei Song, L Ruby Leung, Adam C Varble, Cornelia Klein, Remy Roca, Ran Feng, John F Mejia. (2025).**
-   *Mesoscale convective systems tracking method intercomparison (MCSMIP): Application to DYAMOND global km‐scale simulations.*
-   Journal of Geophysical Research: Atmospheres, 130, e2024JD042204. [DOI](https://doi.org/10.1029/2024JD042204)
+*Mesoscale convective systems tracking method intercomparison (MCSMIP): Application to DYAMOND global km‐scale simulations.* Journal of Geophysical Research: Atmospheres, 130, e2024JD042204. [DOI](https://doi.org/10.1029/2024JD042204)
 
 3. **K Santiago Hernández, Juan J Henao, Sebastián Gómez‐Ríos, Vanessa Robledo, Angela M Rendón, John F Mejía. (2025)**
-   *Spatio‐temporal representation of mesoscale convective systems in convection‐permitting simulations over Northwestern South America: Insights into rainfall overestimation.*
-   Journal of Geophysical Research: Atmospheres, 130, e2024JD042289. [DOI](https://doi.org/10.1029/2024JD042289)
+*Spatio‐temporal representation of mesoscale convective systems in convection‐permitting simulations over Northwestern South America: Insights into rainfall overestimation.* Journal of Geophysical Research: Atmospheres, 130, e2024JD042289. [DOI](https://doi.org/10.1029/2024JD042289)
 
-2. **Vergara, H. J., Robledo, V., Anagnostopoulos, G., Aravamudan, A., Zhang, X., Nikolopoulos, E. I., ... & Forero, G. (2023).**  
->>>>>>> Stashed changes
-   *Improving Flash Flood Monitoring and Forecasting Capabilities in West Africa with Satellite Observations and Precipitation Forecasts.*  
-   AGU23. [AGU fall meeting 2023](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1403991).
+4. **Vergara, H. J., Robledo, V., Anagnostopoulos, G., Aravamudan, A., Zhang, X., Nikolopoulos, E. I., ... & Forero, G. (2023).** *Improving Flash Flood Monitoring and Forecasting Capabilities in West Africa with Satellite Observations and Precipitation Forecasts.* AGU23. [AGU fall meeting 2023](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1403991).
 
-*  **Climatological characteristics of deep convection in Northwestern South America using a persistence tracking technique.**  
-   In *American Geophysical Union Fall Meeting 2022.* [ResearchGate](https://www.researchgate.net/publication/366461770_Climatological_characteristics_of_deep_convection_in_Northwestern_South_America_using_a_persistence_tracking_technique). [AGU fall meeting 2022](https://agu.confex.com/agu/fm22/meetingapp.cgi/Paper/1175671).
+5. **Climatological characteristics of deep convection in Northwestern South America using a persistence tracking technique.** In *American Geophysical Union Fall Meeting 2022.* [ResearchGate](https://www.researchgate.net/publication/366461770_Climatological_characteristics_of_deep_convection_in_Northwestern_South_America_using_a_persistence_tracking_technique). [AGU fall meeting 2022](https://agu.confex.com/agu/fm22/meetingapp.cgi/Paper/1175671).
 
-*  **Spatio-temporal Characterization of Mesoscale Convective Systems over Northern South America.**  
-   In *American Geophysical Union Fall Meeting 2021.* [AGU fall meeting 2021](https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/874852).
+6. **Spatio-temporal Characterization of Mesoscale Convective Systems over Northern South America.** In *American Geophysical Union Fall Meeting 2021.* [AGU fall meeting 2021](https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/874852).
 
-*  **Cloud-resolving Simulations of Mesoscale Convective Systems in Colombia.**  
-   In *American Geophysical Union Fall Meeting 2021.* [ResearchGate](https://www.researchgate.net/publication/357975142_Cloud-resolving_Simulations_of_Mesoscale_Convective_Systems_in_Colombia). [AGU fall meeting 2021](https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/875417).
+7. **Cloud-resolving Simulations of Mesoscale Convective Systems in Colombia.** In *American Geophysical Union Fall Meeting 2021.* [ResearchGate](https://www.researchgate.net/publication/357975142_Cloud-resolving_Simulations_of_Mesoscale_Convective_Systems_in_Colombia). [AGU fall meeting 2021](https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/875417).
 
 -----
 ## Cite publication as
