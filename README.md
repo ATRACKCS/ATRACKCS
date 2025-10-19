@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/17388137.svg)](https://doi.org/10.5281/zenodo.17388137)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17388137.svg)](https://doi.org/10.5281/zenodo.17388137)
 
 ![](repo/ATRACKCS_LOGO_.png)
 
