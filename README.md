@@ -255,4 +255,4 @@ Robledo Delgado, V., Mehta, N., Mejia, J., & Vergara, H. (2025). Algorithm for T
 -----
 ## Acknowledgements
 
-This research was funded by the University of Iowa. The development of the new version of ATRACKCS benefited from valuable discussions and insights provided byJhayron S. Pérez Carrasquilla. Appreciation is also extended to the co-authors of version 1.0.0 of ATRACKCS for their foundational contributions.
+This research was funded by the University of Iowa. The development of the new version of ATRACKCS benefited from valuable discussions and insights provided by Jhayron S. Pérez Carrasquilla. Appreciation is also extended to the co-authors of version 1.0.0 of ATRACKCS for their foundational contributions.
