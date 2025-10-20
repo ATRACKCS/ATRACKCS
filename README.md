@@ -255,4 +255,4 @@ Robledo Delgado, V., Mehta, N., Mejia, J., & Vergara, H. (2025). Algorithm for T
 -----
 ## Acknowledgements
 
-This research was funded by the University of Iowa and the Colombian Ministry of Science, Technology and Innovation (MINCIENCIAS) through the project: “Implementación de un sistema de investigación y pronóstico meteorológico de corto plazo con el modelo WRF, para apoyo a sistemas de comando y control de la Fuerza Aérea Colombiana” (code 1115-852-70955) with funds from “Patrimonio Autónomo Fondo Nacional de Financiamiento para la Ciencia, la Tecnología y la Innovación, Fondo Francisco José de Caldas”. 
+This research was funded by the University of Iowa. The development of the new version of ATRACKCS benefited from valuable discussions and insights provided byJhayron S. Pérez Carrasquilla. Appreciation is also extended to the co-authors of version 1.0.0 of ATRACKCS for their foundational contributions.
