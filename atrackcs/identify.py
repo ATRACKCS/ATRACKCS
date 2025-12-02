@@ -249,15 +249,16 @@ def identify_mcs(ds_tb, Tb, area_Tb, buffer_threshold, ds_p, pp_rates, tb_oversh
     gdf_tb = drop_small_areas(gdf_tb, area_Tb, UTM_WORLD_ZONE).reset_index(drop=True)
     if gdf_tb.empty: 
         return gdf_tb
-    #Calculating Brightness Temperatrue and Precipitation Characteristics
-    gdf_tb = clip_tb_pp_merge(gdf_tb, ds_tb, tb_overshoot, ds_p, pp_rates, drop_empty_precipitation)
-    #Merging polygons that belong to the same systems
-    gdf_tb = merge_neighbours(gdf_tb, buffer_threshold, UTM_WORLD_ZONE)
-    #Extracting the centroids for tracking
-    gdf_tb["centroids"] = gdf_tb.geometry.representative_point()
-    gdf_tb.reset_index(inplace = True, drop = True) 
-    #gdf_tb.drop(columns = "tb_225", inplace = True)
-    return gdf_tb
+    else:
+        #Calculating Brightness Temperatrue and Precipitation Characteristics
+        gdf_tb = clip_tb_pp_merge(gdf_tb, ds_tb, tb_overshoot, ds_p, pp_rates, drop_empty_precipitation)
+        #Merging polygons that belong to the same systems
+        gdf_tb = merge_neighbours(gdf_tb, buffer_threshold, UTM_WORLD_ZONE)
+        #Extracting the centroids for tracking
+        gdf_tb["centroids"] = gdf_tb.geometry.representative_point()
+        gdf_tb.reset_index(inplace = True, drop = True) 
+        #gdf_tb.drop(columns = "tb_225", inplace = True)
+        return gdf_tb
 
 # --- Parallel Processing Workers ---
 
