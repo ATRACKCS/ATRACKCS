@@ -333,7 +333,7 @@ def read_identify_mcs_parallel(pathTb, pathP, pathResults, config):
     #These lines convert CFTimeIndex to DatetimeIndex.
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore", category=RuntimeWarning, message=".*CFTimeIndex.*")
-        ds_p_hourly['time'] = ds_p_hourly.indexes['time'].to_datetimeindex(time_unit='ns')
+        #ds_p_hourly['time'] = ds_p_hourly.indexes['time'].to_datetimeindex(time_unit='ns')
 
     if not config.UTC_LOCAL_HOUR == 0: 
         ds_p_hourly['time'] = ds_p_hourly['time'] - pd.Timedelta(hours=config.UTC_LOCAL_HOUR)
