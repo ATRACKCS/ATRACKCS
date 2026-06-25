@@ -220,7 +220,7 @@ def clip_tb_pp_merge(sup, ds_tb, tb_overshoot, ds_p, pp_rates, drop_empty_precip
         sup.loc[index_t, "volum_pp"] = round((blob_clipped_p.mean().item() / 1000) * areaobj, 2)  # m3/h
         
         #Cheking if the system has at least 1 pixel with 10 mm/h 
-        if blob_clipped.where(blob_clipped >= 10).notnull().sum() >= 1:
+        if blob_clipped.where(blob_clipped_p >= 10).notnull().sum() >= 1:
             sup.loc[index_t, 'pp_10rate'] = True
             #Calculating the fraction of heavy precipitation area (>=10 mm/h)
             sup.loc[index_t,'hvy_prec_frac'] = (areapixel * (blob_clipped >= 10).sum().item() / areaobj)
