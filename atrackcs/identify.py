@@ -307,6 +307,41 @@ def process_one_tb(file_tb, ds_p_hourly, config):
     
     return gdf
 
+
+def ensure_datetimeindex(ds, time_name="time"):
+    """
+    Make ds[time_name] compatible with pandas/xarray datetime operations.
+    Works whether time is CFTimeIndex or already DatetimeIndex.
+    """
+
+    time_index = ds.indexes[time_name]
+
+    # Case 1: V06 or other files with CFTimeIndex
+    if isinstance(time_index, xr.CFTimeIndex):
+        with warnings.catch_warnings():
+            warnings.filterwarnings(
+                "ignore",
+                category=RuntimeWarning,
+                message=".*CFTimeIndex.*"
+            )
+            ds = ds.assign_coords({
+                time_name: time_index.to_datetimeindex(time_unit="ns")
+            })
+
+    # Case 2: V07 or files already using pandas DatetimeIndex
+    elif isinstance(time_index, pd.DatetimeIndex):
+        ds = ds.assign_coords({
+            time_name: pd.to_datetime(time_index)
+        })
+
+    # Case 3: fallback for weird/object/string time formats
+    else:
+        ds = ds.assign_coords({
+            time_name: pd.to_datetime(ds[time_name].values)
+        })
+
+    return ds
+    
 def read_identify_mcs_parallel(pathTb, pathP, pathResults, config):
     """
     Read and process Tb and P data in parallel, returning a single GeoDataFrame.
@@ -334,6 +369,7 @@ def read_identify_mcs_parallel(pathTb, pathP, pathResults, config):
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore", category=RuntimeWarning, message=".*CFTimeIndex.*")
         #ds_p_hourly['time'] = ds_p_hourly.indexes['time'].to_datetimeindex(time_unit='ns')
+        ds_p_hourly = ensure_datetimeindex(ds_p_hourly, time_name="time")
 
     if not config.UTC_LOCAL_HOUR == 0: 
         ds_p_hourly['time'] = ds_p_hourly['time'] - pd.Timedelta(hours=config.UTC_LOCAL_HOUR)
