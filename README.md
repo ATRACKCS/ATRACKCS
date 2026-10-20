@@ -253,6 +253,43 @@ Robledo, V., Henao, J. J., Mejía, J. F., Ramírez‐Cardona, Á., Hernández, K
 Robledo Delgado, V., Mehta, N., Mejia, J., & Vergara, H. (2025). Algorithm for TRACKing Convective Systems (ATRACKCS) (V.2.0.0). Zenodo. https://doi.org/10.5281/zenodo.17388137
 
 -----
+## Contributing to ATRACKCS
+
+We welcome contributions that improve the scientific reliability, functionality, performance, and usability of ATRACKCS.
+
+ATRACKCS is a research-oriented storm-tracking algorithm. To maintain scientific consistency, reproducibility, and software quality, all contributions must follow the guidelines below.
+
+### 1. Contribution Workflow
+
+- Contributors should fork the official ATRACKCS repository.
+- All development should take place in branches within the contributor's fork.
+- Proposed modifications must be submitted through a Pull Request (PR) to the official repository.
+- Direct modifications to the official repository are restricted to authorized maintainers.
+
+### 2. Review and Approval
+
+- All Pull Requests are subject to review by the project maintainers.
+- Contributions may be accepted, modified, or declined based on their scientific relevance, technical quality, and compatibility with the project's objectives.
+- Submitting a Pull Request does not guarantee its acceptance.
+- Only authorized maintainers can approve the integration of contributions into the official project.
+
+### 3. Scientific and Technical Standards
+
+Contributions that modify storm identification, tracking, or characterization methods must:
+
+- Clearly describe the proposed methodological changes.
+- Explain their scientific motivation.
+- Demonstrate how the changes affect algorithm performance or results.
+- Include appropriate tests and documentation.
+- Preserve reproducibility and compatibility with existing workflows whenever possible.
+
+### 4. Recognition and Authorship
+
+Contributions will be recognized according to their nature and significance.
+
+Code contributions do not automatically imply authorship in scientific publications. Publication authorship will be determined separately based on substantive scientific contributions and applicable authorship standards.
+
+-----
 ## Acknowledgements
 
 This research was funded by the University of Iowa. The development of the new version of ATRACKCS benefited from valuable discussions and insights provided by Jhayron S. Pérez Carrasquilla. Appreciation is also extended to the co-authors of version 1.0.0 of ATRACKCS for their foundational contributions.
